@@ -1,0 +1,31 @@
+<html> 
+	<head> 
+	<script language="javascript"> 
+	function preload() 
+	{ 
+	topon=new Image(100,50); 
+	topon.src="https://images.unsplash.com/photo-1516431883659-655d41c09bf9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c25vd2luZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"; 
+	topoff=new Image(50,50); 
+	topoff.src="https://i.pinimg.com/originals/e8/10/bf/e810bf08f6451d4f4cda9c166b93cb27.jpg"
+	} 
+	function myMouseOn(n) 
+	{ 
+	preload(); 
+	imageON=eval(n+"on.src"); 
+	document.images[n].src=imageON; 
+	} 
+	function myMouseOff(n) 
+	{ 
+	imageOFF=eval(n+"off.src"); 
+	document.images[n].src=imageOFF; 
+	} 
+	</script> 
+	</head> 
+	<body > 
+        <h1 style="color: green;background-color: greenyellow;font-family: serif;text-align: center;"> JAVASCRIPT EVENT HANDLING</h1> <br><br>
+	<a href="#" onMouseOut="myMouseOff('top')"; onMouseOver="myMouseOn('top')";> 
+        <img src="sea.jpg" alt="Show Next" name="top"> 
+	</a> 
+	</body> 
+	</html>
+	

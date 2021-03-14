@@ -1,0 +1,78 @@
+<html> 
+	<head> 
+	<title>Exam</title> 
+	<script language="javascript"> 
+	function exam(form) 
+	{ 
+	var i=0; 
+	if(form.one[0].checked) 
+	i=i+1; 
+	if(form.three[3].checked) 
+	i=i+1; 
+	if(form.four[1].checked) 
+	i=i+1; 
+	if(form.five[0].checked) 
+	i=i+1; 
+	window.alert("Thank You for attending the  Online Exam! Your Score is: "+i); 
+	} 
+	</script> 
+	</head> 
+	<body bgcolor=lightblue> 
+	<form onSubmit="exam(this)"> 
+	<center><h1 style="border: 2;background-color: deepskyblue;color: crimson;">WELCOME TO ONLINE EXAMINATION</h1></center> 
+	<p> 
+	<h2>1)HTML stands for</h2> 
+    <h3>
+	<input type="radio" name="one" value="HyperText Markup Language"> 
+	<label>HyperText Markup Language</label> 
+	<input type="radio" name="one" value="High Text Marked Language"> 
+	<label>High Text Marked Language</label> 
+	<input type="radio" name="one" value="Hyper Text Marked Language"> 
+	<label>Hyper Text Marked Language</label> 
+	<input type="radio" name="one"value="HyperText Markup List"> 
+	<label>HyperText Markup List</label>
+    </h3> 
+	</p> 
+	<p> 
+	<h2>2)HOW MANY TYPE OF HEADING DOES AN HTML CONTAIN?</h2> 
+    <h3>
+	<input type="radio" name="three" value="THREE"> 
+	<label>THREE</label> 
+	<input type="radio" name="three" value="FOUR"> 
+	<label>FOUR</label> 
+	<input type="radio" name="three" value="FIVE"> 
+	<label>FIVE</label> 
+	<input type="radio" name="three" value="SIX"> 
+	<label>SIX</label> </h3></p> 
+	<p> 
+	<h2>3)WHICH HTML TAG IS USED TO DISPLAY DATA IN TABULAR FORM?</h2>
+    <h3> 
+	<input type="radio" name="four" value="form tag"> 
+	<label>form tag</label> 
+	<input type="radio" name="four" value="table tag"> 
+	<label>table tag</label> 
+	<input type="radio" name="four" value="anchor tag"> 
+	<label>anchor tag</label> 
+	<input type="radio" name="four" value="paragraph tag"> 
+	<label>Swing</label>
+    </h3> 
+	</p> 
+	<p> 
+	<h2>4)WHICH TAG IS USED TO CREATE HYPERLINK IN HTML</h2>
+    <h3> 
+	<input type="radio" name="five" value="anchor tag"> 
+	<label>anchor tag</label> 
+	<input type="radio" name="five" value="paragraph tag"> 
+	<label>paragraph tag</label> 
+	<input type="radio" name="five" value="table tag"> 
+	<label>table tag</label> 
+	<input type="radio" name="five" value="center tag"> 
+	<label>center tag</label>
+    </h3> 
+	</p> 
+	<p><center> 
+	<input type="submit" value="Submit"> 
+	<input type ="reset" value="Reset"> 
+	</center></p> 
+	</body> 
+	</html> 
